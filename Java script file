@@ -1,0 +1,35 @@
+alert("Rob Loves you for turning me on");
+
+ var dark = true;
+function light() {
+   if (dark == true) {
+    var lamp = document.getElementById("lamp");
+    var on = document.getElementById("on");
+    var wire = document.getElementById("wire");
+    //lamp
+    lamp.style = "background-color:yellow; box-shadow:0px 0px 40px yellow;";
+    //(|background(wall)
+    document.body.style = "background-color:#415da1;";
+    //Выключатель|switch on
+    on.style = "color:#00ff00; box-shadow:inset -2px -2px white; border:1px solid white; text-shadow:0px 0px 20px #00ff00";
+    on.innerHTML = "<br/>on";
+    //|wire
+    wire.style = "background-color:#ff0000;box-shadow:0px 0px 30px black;";
+    dark = false
+    }
+    else {
+        var lamp = document.getElementById("lamp");
+    var on = document.getElementById("on");
+    var wire = document.getElementById("wire");
+    //|lamp
+    lamp.style = "background-color:#3d3d3d; box-shadow:0px 0px 40px #3d3d3d;";
+    //|background(wall)
+    document.body.style = "background-color:#33436b;";
+    // off
+    on.style = "color:red; box-shadow:inset 2px 2px white; border:1px solid white; text-shadow:0px 0px 20px red";
+    on.innerHTML = "<br/>off";
+    //
+    wire.style = "background-color:darkred;box-shadow:0px 0px 20px black;";
+        dark = true;
+    }
+}
